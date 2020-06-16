@@ -73,6 +73,7 @@ Partial Class frmRegistro
         '
         Me.txtPass2.Location = New System.Drawing.Point(134, 94)
         Me.txtPass2.Name = "txtPass2"
+        Me.txtPass2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass2.Size = New System.Drawing.Size(210, 20)
         Me.txtPass2.TabIndex = 4
         '
@@ -80,6 +81,7 @@ Partial Class frmRegistro
         '
         Me.txtPass.Location = New System.Drawing.Point(134, 60)
         Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass.Size = New System.Drawing.Size(210, 20)
         Me.txtPass.TabIndex = 5
         '
@@ -116,7 +118,7 @@ Partial Class frmRegistro
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmRegistro"
-        Me.Text = "frmRegistro"
+        Me.Text = "Registro de usuarios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

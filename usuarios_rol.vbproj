@@ -48,6 +48,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.19\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -86,10 +90,10 @@
     <Compile Include="frmRegistro.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menuPrincipal.Designer.vb">
-      <DependentUpon>menuPrincipal.vb</DependentUpon>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="menuPrincipal.vb">
+    <Compile Include="frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -115,8 +119,8 @@
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menuPrincipal.resx">
-      <DependentUpon>menuPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

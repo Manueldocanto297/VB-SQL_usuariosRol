@@ -34,7 +34,7 @@ Partial Class frmLogin
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(56, 46)
+        Me.Label1.Location = New System.Drawing.Point(43, 38)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(61, 15)
@@ -45,7 +45,7 @@ Partial Class frmLogin
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(56, 78)
+        Me.Label2.Location = New System.Drawing.Point(43, 70)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 15)
@@ -54,21 +54,23 @@ Partial Class frmLogin
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(140, 46)
+        Me.txtUsuario.Location = New System.Drawing.Point(127, 38)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(202, 21)
         Me.txtUsuario.TabIndex = 2
         '
         'txtPass
         '
-        Me.txtPass.Location = New System.Drawing.Point(140, 78)
+        Me.txtPass.Location = New System.Drawing.Point(127, 70)
         Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass.Size = New System.Drawing.Size(202, 21)
         Me.txtPass.TabIndex = 3
         '
         'btnRegistro
         '
-        Me.btnRegistro.Location = New System.Drawing.Point(59, 130)
+        Me.btnRegistro.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistro.Location = New System.Drawing.Point(46, 110)
         Me.btnRegistro.Name = "btnRegistro"
         Me.btnRegistro.Size = New System.Drawing.Size(126, 23)
         Me.btnRegistro.TabIndex = 4
@@ -77,9 +79,10 @@ Partial Class frmLogin
         '
         'btnIngresar
         '
-        Me.btnIngresar.Location = New System.Drawing.Point(244, 130)
+        Me.btnIngresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIngresar.Location = New System.Drawing.Point(203, 110)
         Me.btnIngresar.Name = "btnIngresar"
-        Me.btnIngresar.Size = New System.Drawing.Size(98, 23)
+        Me.btnIngresar.Size = New System.Drawing.Size(126, 23)
         Me.btnIngresar.TabIndex = 5
         Me.btnIngresar.Text = "Ingresar"
         Me.btnIngresar.UseVisualStyleBackColor = True
@@ -89,7 +92,7 @@ Partial Class frmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.ClientSize = New System.Drawing.Size(398, 185)
+        Me.ClientSize = New System.Drawing.Size(375, 153)
         Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.btnRegistro)
         Me.Controls.Add(Me.txtPass)
@@ -99,7 +102,7 @@ Partial Class frmLogin
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "frmLogin"
-        Me.Text = "Form1"
+        Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
