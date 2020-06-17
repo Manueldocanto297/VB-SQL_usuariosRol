@@ -41,5 +41,7 @@ Public Class frmLogin
     Private Sub btnRegistro_Click(sender As Object, e As EventArgs) Handles btnRegistro.Click
         Me.Hide()
         frmRegistro.Show()
+        txtPass.Clear()
+        txtUsuario.Clear()
     End Sub
 End Class
