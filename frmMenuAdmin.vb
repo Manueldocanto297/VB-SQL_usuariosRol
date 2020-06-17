@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class frmMenu
+Public Class frmMenuAdmin
     Dim conexion As MySqlConnection = New MySqlConnection
     Dim cmd As New MySqlCommand
     Dim adaptador As New MySqlDataAdapter
@@ -155,9 +155,10 @@ Public Class frmMenu
             End If
 
         Else
-                MsgBox("Debe seleccionar un usuario", , "Error")
+            MsgBox("Debe seleccionar un usuario", , "Error")
         End If
 
         ActualizarSelect()
     End Sub
+
 End Class

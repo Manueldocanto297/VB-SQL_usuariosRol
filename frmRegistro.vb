@@ -2,7 +2,6 @@
 Public Class frmRegistro
     Dim conexionRegistro As MySqlConnection = New MySqlConnection
     Dim cmd As New MySqlCommand
-    Dim adaptador As New MySqlDataAdapter
 
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
         conexionRegistro.ConnectionString = "server=localhost; database=usuarios_roles; Uid=root; pwd=123456789;"

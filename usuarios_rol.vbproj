@@ -117,16 +117,28 @@
       <DependentUpon>frmLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMenuInvitado.Designer.vb">
+      <DependentUpon>frmMenuInvitado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuInvitado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuOperador.Designer.vb">
+      <DependentUpon>frmMenuOperador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuOperador.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmRegistro.Designer.vb">
       <DependentUpon>frmRegistro.vb</DependentUpon>
     </Compile>
     <Compile Include="frmRegistro.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenu.Designer.vb">
-      <DependentUpon>frmMenu.vb</DependentUpon>
+    <Compile Include="frmMenuAdmin.Designer.vb">
+      <DependentUpon>frmMenuAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmMenu.vb">
+    <Compile Include="frmMenuAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -153,8 +165,8 @@
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenu.resx">
-      <DependentUpon>frmMenu.vb</DependentUpon>
+    <EmbeddedResource Include="frmMenuAdmin.resx">
+      <DependentUpon>frmMenuAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

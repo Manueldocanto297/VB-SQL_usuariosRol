@@ -3,6 +3,7 @@ Public Class frmLogin
     Dim conexion As MySqlConnection = New MySqlConnection
     Dim cmd As New MySqlCommand
     Dim adaptador As New MySqlDataAdapter
+    Dim ds As New DataSet
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         conexion.ConnectionString = "server=localhost; database=usuarios_roles; Uid=root; pwd=123456789;"
@@ -18,12 +19,24 @@ Public Class frmLogin
                 cmd.Parameters.AddWithValue("@pass", txtPass.Text)
                 cmd.Prepare()
                 cmd.ExecuteNonQuery()
-                Dim reader As MySqlDataReader
-                reader = cmd.ExecuteReader()
-
+                adaptador.SelectCommand = cmd
+                adaptador.Fill(ds, "roles")
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
                 If (reader.HasRows) Then
-                    Me.Hide()
-                    frmMenu.Show()
+                    Dim rol As String
+                    rol = ds.Tables("roles").Rows(0)("idRol")
+                    'MsgBox(rol)
+                    Select Case rol
+                        Case "1"
+                            Me.Hide()
+                            frmMenuAdmin.Show()
+                        Case "2"
+                            Me.Hide()
+                            frmMenuOperador.Show()
+                        Case "3"
+                            Me.Hide()
+                            frmMenuInvitado.Show()
+                    End Select
                 Else
                     MsgBox("Los datos ingresados no son correctos o el usuario está inactivo", , "Error")
                 End If
